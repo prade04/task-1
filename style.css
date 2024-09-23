@@ -1,0 +1,372 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.a span{
+    color: rgb(231, 147, 98);
+   font-size: 18px;
+   text-align: center;
+   font-weight: 60;
+   font-style: italic;
+} 
+.a p{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 5px;
+    font-style: oblique;
+ }
+.fa-icons {
+    position: relative;
+} 
+.pro{
+    display: flex;
+    padding-left: 90px;
+    width: 150%;
+    float: left;
+    animation: slide 40s i; 
+}
+.pro p{
+    margin-top: 210px;
+    font-weight: 600;
+    text-align: start; 
+
+}
+.fa-solid{
+    bottom: 220px;
+}
+@keyframes slide{
+    /* 0%{
+        transform:translatex(50%)
+    }
+    20%{
+        transform:translatex(40%);
+    }
+    40%{
+        transform:translateY(0%);
+    }
+    60%{
+        transform: translateY(20%);
+    }
+    80%{
+        transform: translateY(0%);
+    } */
+     0%{
+        left: 0;
+     }
+     20%{
+        left: 0;
+     }
+     20%{
+        left: -100%;
+     }
+     45%{
+        left: -100%;
+     }
+     50%{
+        left: -200%;
+     }
+     70%{
+        left: -200%;
+     }
+     75%{
+        left: -300%;
+     }
+     95%{
+        left: -300%;
+     }
+     100%{
+        left: -400%;
+     }
+
+}
+/* @keyframes slide {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    45%{
+        opacity: 5;
+    }
+} */
+.c{
+    background-image: url(./img/4.jpg);
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 20%;
+    padding: 20px; 
+    color: aliceblue;
+    font-size: 28px;
+    /* animation: slide 2s infinite;  */
+}
+
+.e{
+    background-image: url(./img/5.jpg);
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 20%;
+    padding: 20px; 
+    color: aliceblue;
+    font-size: 28px;
+    /* animation: slide 2s infinite;  */
+}
+.f{
+    background-image: url(./img/3.jpg);
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 20%;
+    padding: 20px; 
+    color: aliceblue;
+    font-size: 28px;
+    /* animation: slide 2s infinite;  */
+}
+.g{
+    background-image: url(./img/1.jpg);
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 20%;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 28px;
+}
+.h{
+    background-image: url(./img/2.jpg);
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 20%;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 28px;
+   
+}
+button{
+    border-color: aliceblue;
+}
+.c button{
+    border-radius: 7%;
+    font-size: medium;
+    padding: 3px;
+    padding-inline: 50px;
+    margin-top: 2%;
+    color: green;
+}
+.e button{
+    border-radius: 7%;
+    font-size: medium;
+    padding: 3px;
+    padding-inline: 50px;
+    margin-top: 2%;
+    color: rgb(201, 21, 126);
+}
+.f button{
+    border-radius: 7%;
+    font-size: medium;
+    padding: 3px;
+    padding-inline: 50px;
+    margin-top: 2%;
+    color: yellow;
+} 
+.g button{
+    border-radius: 7%;
+    font-size: medium;
+    padding: 3px;
+    padding-inline: 50px;
+    margin-top: 2%;
+    color: rgb(36, 172, 235);
+}
+.h button{
+    border-radius: 7%;
+    font-size: medium;
+    padding: 3px;
+    padding-inline: 50px;
+    margin-top: 2%;
+    color: rgb(218, 64, 64);
+}
+.coin .skillbox{
+    width: 100%;
+    margin: 15px 0;
+}
+.skillbox .skillbar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(247, 238, 238, 0.1);
+}
+.skillbar .skillper{
+    position: relative;
+    float: left;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    background-color: green;
+    animation: progress 5s ease-in-out forwards;
+    opacity: 0;
+}
+.skillbar .poor{
+    width: 86.6%;
+}
+.skillbar .education{
+    background-color: palevioletred;
+    width: 100%;
+}
+.skillbar .medical{
+    background-color: yellow;
+    width: 92.6%;
+}
+.skillbar .child{
+    background-color:  rgb(36, 172, 235);
+    width: 72.7%;
+}
+.skillbar .raised{
+    background-color: palevioletred;
+    width: 94.9%;
+}
+
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skillper .tooltrip{
+    position: absolute;
+    right: 7px;
+    top: -35px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(15, 17, 15);
+    padding: 2px 6px;
+    border-radius: 3px;
+    background-color: rgb(231, 240, 231);
+    z-index: 1;
+}
+.tooltrip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: rgb(236, 240, 236);
+    transform: translatex(-50%) rotate(45deg);
+
+}
+.pro span{
+    float: right;
+}
+.c p:hover{
+   color: green;
+   text-decoration: underline green;  
+}
+.c:hover{
+            background-color: orange;
+            background-position: bottom;
+            background-size: cover ;
+            background-repeat: no-repeat;
+            background-blend-mode:hard-light;
+}
+.e p:hover{
+    color:  rgb(218, 64, 64);
+    text-decoration: underline  rgb(218, 64, 64);
+ }
+ .e:hover{
+    background-color: orange;
+    background-position: bottom;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-blend-mode:hard-light;
+}
+.f p:hover{
+    color: yellow;
+    text-decoration: underline yellow;
+ }
+ .f:hover{
+    background-color: orange;
+    background-position: bottom;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-blend-mode:hard-light;
+}
+.g p:hover{
+    color: rgb(36, 172, 235);
+    text-decoration: underline rgb(36, 172, 235);
+ }
+ .g:hover{
+    background-color: orange;
+    background-position: bottom;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-blend-mode:hard-light;
+}
+.h:hover{
+    background-color: orange;
+    background-position: bottom;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-blend-mode:hard-light;
+}
+.h p:hover{
+    color: rgb(218, 64, 64);
+    text-decoration: underline rgb(218, 64, 64);
+ }
+ .fa-message{
+    
+ }
+ 
+@media only screen and (max-width: 800px)  {
+    
+    .pro{
+        display: flex;
+        padding-left: 90px;
+        width: 320%;
+        float: left;
+        padding: 10px;
+    }
+    .pro p{
+        margin-top: 200px;
+        font-weight: 300;
+        text-align: start; 
+    } 
+    .fa-solid{
+        bottom: 210px;
+    }
+    /* .c{
+        background-image: url(./img/4.jpg);
+        background-repeat: no-repeat;
+        height: 90vh;
+        width: 60%;
+        padding: 20px; 
+        color: aliceblue;
+        font-size: 30px;
+    }   */
+       .c{
+        width: 50%;
+        height: 90vh;
+       }
+       .e{
+        width: 50%;
+        height: 90vh;
+       }
+       .f{
+        width: 50%;
+        height: 90vh;
+       }
+       .g{
+        width: 50%;
+        height: 90vh;
+       }
+       .h{
+        width: 50%;
+        height: 90vh;
+       }
+}
+
